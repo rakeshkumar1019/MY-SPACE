@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>MYSPACE</title>
+    <style type="text/css">
+      html {
+      scroll-behavior: smooth;
+      }
+      body{   
+        color: white;
+        background-color:black;
+      }
+      #back_img{
+        height: 100%;
+        width: 100%;
+      }
+      .bg_nav{
+        background-color:black;
+      }
+      #head{ 
+        margin-top:100px; 
+        font-size:70px;
+        font-weight: bold;
+        color:white;
+      }
+      #typed{
+        font-size:30px;
+        font-weight: bold;
+        color:gray;
+      }
+      #qq{
+         margin-top:10px; 
+          font-size: 12px;    
+          font-weight: bold;
+          color:gray;
+      } 
+      .btn_cost{
+        background-color:black;
+        border: 1px solid white;
+        color:white;
+        border-radius: 0px;
+        padding: 5px 30px;
+        text-decoration: none;
+        
+      }  
+      .btn_cost:hover{
+        background-color:whitesmoke;
+        color:black;
+        border: 1px solid white;      
+        text-decoration: none;
+      } 
+      .card{
+        height:70%;
+        width: 80%;
+        align-items: center;
+        background-color: black;
+      }
+      .card1{
+        height:50%;
+        width: 60%;
+        align-items: center;
+        background-color: black;
+         margin-left:50px; 
+      }
+      .cen{
+        
+        margin-left:25px;
+        font-weight: bold;
+        font-size: 25px; 
+        color: white;
+
+      }
+      .card_border{
+        height: 600px;
+      }
+      .small{
+        margin-left:85px;
+        font-size: 15px;
+        font-weight: bold;
+
+      }
+      .small1{
+        font-size: 12px;
+        color: gray;
+      }
+      .cen1{
+        font-size: 15px;
+        color: gray;
+      }
+    </style>
+      
+  </head>
+  <body>
+
+<nav class="navbar navbar-expand-md  bg_nav navbar-dark">
+  <a class="navbar-brand" href="#" style="font-weight:bold;">MYSPACE</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#glance">Glance</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+<br>
+ 
+
+<div class="container-fluid" id="home">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">  
+        <h1 class="h1" id="head"> MYSPACE  </h1> 
+         <span id="typed"></span><br>
+          <h3 id="qq">GET ORGANIZED AND COMPLETE TASKS MORE QUICKLY AND MORE RELIABLY BY USING THE MYSPACE.</h3><br>
+          <a href="/signup" class="btn_cost">Sign Up</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <a href="/login" class="btn_cost">Sign In </a><br><br><br>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+         <img id="back_img" src="bg.svg">       
+      </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="services">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+      <h1 style="text-align: center;font-weight: bold;">OUR SERVICES</h1></div>      
+    </div> 
+    <div class="row">
+       <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 "></div> 
+       <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 card_border" >
+        <img class="card"  src="add.svg"> 
+        <center>
+        <h3 class="cen">Smart daily planning</h3>
+        <p class="cen1">Accomplish what’s meaningful to you each day with My Day, intelligent and personalized suggestions to update your daily to-do list.</p>
+      </center>
+      </div> 
+      <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 "></div> 
+       <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 card_border" >
+      <img  class="card" src="update.svg"> 
+      <center>
+      <h3 class="cen">Anywhere you are</h3>
+      <p class="cen1">Quickly capture and retrieve your lists and tasks across devices to help you stay organized at work, home, or on the go.</p>
+      </center>
+      </div> 
+      <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 "></div> 
+       <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3  card_border"  >
+       <img  class="card" src="email.svg"> 
+       <center>
+       <h3 class="cen">Make tasks more manageable</h3>
+       <p class="cen1">Break tasks down into simple steps, add due dates, and set reminders to keep you on track.</p>
+       </center>
+      </div>      
+    </div>
+</div>
+
+<div class="container-fluid" id="glance">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+      <h1 style="text-align: center;font-weight: bold;">TODO AT  A GLANCE</h1> 
+      </div>      
+    </div>
+</div>
+<br><br>
+<div class="container-fluid"  >
+    <div class="row">       
+       <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3  " >
+        <img  class="card1"  src="menu.svg"> 
+        <h3 class="small">Quick Menu</h3> 
+        <center class="small1">
+          <p>Add, organize and plan your to-dos (e.g. due dates, priority, reminders, etc.), with simple gestures and from one view.</p>
+        </center>       
+      </div>        
+     <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3  " >
+      <img   class="card1" src="search.svg">  
+      <h3 class="small">Powerful Search</h3> 
+      <center class="small1">
+          <p>View to-dos based on attributes like due dates, tags, who they’re assigned to and more.</p>
+        </center>     
+      </div> 
+       <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 "  >
+       <img  class="card1"  src="filter.svg">
+        <h3 class="small">Date Filtering</h3>    
+       <center class="small1">
+          <p>View to-dos by due dates and assign/adjust start and due dates based on priority and workloads. </p>
+        </center>     
+      </div>  
+      <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 "  >
+       <img   class="card1" src="edit.svg"> 
+       <h3 class="small">Task Editing</h3>
+       <center class="small1">
+          <p> Deep control of to-do attributes – everything from a to-do’s priority to setting as many reminders as you want</p>
+        </center>  
+      </div>          
+    </div>
+</div>
+<div class="container-fluid"  >
+    <div class="row">       
+       <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3  " >
+        <img  class="card1"  src="gtd.svg">  
+        <h3 class="small">GTD Methodology</h3>
+        <center class="small1">
+          <p>Built with “Getting Things Done” principles in mind, Todo Cloud keeps you focused on what’s most important. </p>
+        </center>        
+      </div>        
+     <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3  " >
+      <img   class="card1" src="alert.svg">
+       <h3 class="small">Alerts and Reminders</h3>   
+      <center class="small1">
+          <p>Stay on task with reminders and alerts based on due date (May 2nd), time (2:00) and location (when I get home).
+
+         </p>
+        </center>    
+      </div> 
+       <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 "  >
+       <img  class="card1"  src="today.svg"> 
+        <h3 class="small">Today View</h3> 
+       <center class="small1">
+          <p>View your day with a quick summary of today’s to-dos, without unlocking your phone. </p>
+        </center>       
+      </div>  
+      <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 "  >
+       <img   class="card1" src="team.svg">
+       <h3 class="small">Todo Everywhere</h3>
+       <center class="small1">
+          <p>Sync and track to-dos across all your devices. Todo Cloud supports iPhone, Mac, Web, Android and Apple Watch. </p>
+        </center>   
+      </div>          
+    </div>
+</div>
+<br><br>
+<footer class="page-footer font-small" style="border-top: 1px solid gray;">
+
+  
+  <div class="footer-copyright text-center py-3">© No Copyright:
+    <a href="https://mdbootstrap.com/"> www.yourspace.com</a>
+  </div>
+   
+
+</footer>
+ 
+
+
+    <script>
+     window.addEventListener('load', function () {
+      var typed6 = new Typed('#typed', {
+        strings: ['Productive', 'Up-To-Date', '  Secure','Digital Task Management System'],
+        typeSpeed: 80,
+        backSpeed: 0,
+        loop: false
+      });
+     });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

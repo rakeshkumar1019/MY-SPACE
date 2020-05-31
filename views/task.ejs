@@ -1,0 +1,143 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>todoApp:login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style type="text/css">
+    	 body{
+        background-color: black;
+        color: white;
+       }
+       .btn_sign{
+      background-color:black;
+        border: 1px solid white;
+        color:white;
+        border-radius: 0px;
+        /*padding: 5px 30px;*/
+        width: 100px;
+        height: 80px;
+        text-decoration: none;
+      }
+      .btn_sign:hover{
+        background-color:whitesmoke;
+        color:black;
+        border: 1px solid white;      
+        text-decoration: none;
+      }
+        .btn_sign1{
+      background-color:white;
+        border: 1px solid white;
+        color:black;
+        border-radius: 0px;
+        /*padding: 5px 30px;*/
+        width: 100px;
+        height: 80px;
+        text-decoration: none;
+      }
+      .btn_sign1:hover{
+        background-color:black;
+        color:white;
+        border: 1px solid white;      
+        text-decoration: none;
+      }
+       .btn_sign11{
+      background-color:black;
+        border: 1px solid white;
+        color:white;
+        border-radius: 0px;
+        /*padding: 5px 30px;*/
+        width: 100px;
+       
+        text-decoration: none;
+      }
+      .btn_sign11:hover{
+        background-color:whitesmoke;
+        color:black;
+        border: 1px solid white;      
+        text-decoration: none;
+      }
+      .alert_col{
+        color: black;
+        background-color: white;
+        border-bottom: 1px solid white;
+        border-top: 1px solid black;
+      }
+       .updateimg{
+        height: 90%;
+        width: 90%;
+      }
+    </style>
+</head>
+<body >
+   <% if(success!=''){ %>
+   <div id="al" class="alert  alert-dismissible alert_col">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong> <%= success %>!</strong>
+  </div>
+  <%} %> 
+
+   <br><br>
+   <div class="container-fluid"  >
+        <div class="row">       
+             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 " >
+               <h1>Create Your New Task</h1>
+             </div>
+        </div>
+    </div>
+
+  <div class="container-fluid"  >
+        <div class="row">       
+             <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 " >
+               <a href="/dashboard" class="btn  btn_sign">Dashboard</a>
+                <a href="/add/task" class="btn  btn_sign1">New Task</a><br>
+              <a href="/add/task/completed" class="btn btn_sign ">Completed Tasks</a><br>
+              <a href="/all/task/update" class="btn btn_sign ">Update Tasks</a><br>
+              <a href="/see/task/all" class="btn btn_sign ">All task</a><br>
+               <a href="/see/task/all" class="btn btn_sign ">Search Task</a><br>
+              <a href="/logout" class="btn btn_sign ">Logout</a>
+             </div>
+             <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 " >
+               <form action="/post/task/" method="POST">
+                  <div class="form-group">
+                      <label>Title</label>
+                      <input type="text" name="title" class="form-control" id="exampleInputText" aria-describedby="textHelp" placeholder="Enter Title">
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Write Content</label>
+                      <textarea class="form-control rounded-0" name="content" id="exampleFormControlTextarea1" rows="5"> </textarea>
+                  </div>
+                  <div class="form-group">
+                       <label>Date you want complete  your work by date</label>
+                       <input type="date"  name="completedDate" class="form-control"   placeholder="Enter Date">
+                   </div>
+                   <button type="submit" class="btn  btn_sign11 ">Submit</button>
+              </form>
+             </div>
+
+             <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7" >
+                 <img class="updateimg" src="/addnew.svg" >
+               </div>
+
+        </div>
+  </div>
+ 
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

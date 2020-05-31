@@ -1,0 +1,170 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>todoApp:login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style type="text/css">
+    	 body{
+        background-color: black;
+        color: white;
+       }
+       .btn_sign{
+      background-color:black;
+        border: 1px solid white;
+        color:white;
+        border-radius: 0px;
+        /*padding: 5px 30px;*/
+        width: 100px;
+        height: 60px;
+        text-decoration: none;
+      }
+      .btn_sign:hover{
+        background-color:whitesmoke;
+        color:black;
+        border: 1px solid white;      
+        text-decoration: none;
+      }
+       .btn_sign1{
+      background-color:black;
+        border: 1px solid white;
+        color:white;
+        border-radius: 0px;
+        /*padding: 5px 30px;*/
+        width: 100px;
+         
+        text-decoration: none;
+      }
+      .btn_sign1:hover{
+      background-color:white;
+        border: 1px solid white;
+        color:black;
+        border-radius: 0px;
+        /*padding: 5px 30px;*/
+        width: 100px;
+         
+        text-decoration: none;
+      }
+       .btn_sign11{
+      background-color:white;
+        border: 1px solid white;
+        color:black;
+        border-radius: 0px;
+        /*padding: 5px 30px;*/
+        width: 100px;
+        height: 60px;
+        text-decoration: none;
+      }
+      .btn_sign11:hover{
+        background-color:black;
+        color:white;
+        border: 1px solid white;      
+        text-decoration: none;
+      }
+      .btn_sign111{
+      background-color:black;
+        border: 1px solid white;
+        color:white;
+        border-radius: 0px;
+        /*padding: 5px 30px;*/
+        width: 100px;
+         
+        text-decoration: none;
+      }
+      .btn_sign111:hover{
+        background-color:white;
+        color:black;
+        border: 1px solid white;      
+        text-decoration: none;
+      }
+      td,th{
+        border: 1px solid white;
+      }
+    	 
+    </style>
+</head>
+<body >
+    
+  <div class="container-fluid"  >
+        <div class="row">       
+             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 " >
+               <h1>ALL TASKS</h1>
+             </div>
+        </div>
+  </div>
+
+  <div class="container-fluid"  >
+        <div class="row">       
+             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 " >
+               <a href="/dashboard" class="btn  btn_sign">Dashboard</a>
+                <a href="/add/task" class="btn  btn_sign">New Task</a>
+              <a href="/add/task/completed" class="btn btn_sign ">Completed Tasks</a>
+              <a href="/all/task/update" class="btn btn_sign ">Update Tasks</a>
+              <a href="/see/task/all" class="btn btn_sign11 ">All task</a>
+               <a href="/see/task/all" class="btn btn_sign ">Search Task</a>
+              <a href="/logout" class="btn btn_sign ">Logout</a> 
+             </div>
+        </div>
+  </div>
+  <br>
+  <div class="container-fluid"  >
+        <div class="row">       
+             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 " >
+                   <form action="/search" method="POST">
+                     <input type="text" name=search placeholder="Search Here" required=""> <input type="submit" value="Search " class="btn btn_sign111">
+                   </form>
+             </div>
+        </div>
+  </div>
+
+<br>
+
+ <div class="container-fluid"  >
+        <div class="row">       
+             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 " >
+                  <table class="table" style="color: white;">
+    <thead>
+      <tr style="border: 1px solid white;">
+        <th>ID</th>
+        <th>TITLE</th>
+        <th>CONTENT</th>
+        <th>CREATED ON on</th>
+        <th>COMPLETE BY</th>
+        <th>STATUS</th>
+        <th>UPDATE</th>
+      </tr>
+    </thead>
+    <tbody>
+     <% tasks.reverse().forEach(function(task,ind){  %>
+       <tr style="border: 1px solid white;">
+        <td><%= task.id %> </td>
+        <td><%= task.title %> </td>
+        <td><%= task.content %> e</td>
+        <td><%= task.createdDate %> <%= task.time %> </td>
+        <td><%= task.completedDate %></td>
+        <td><%= task.isDone %></td>
+        <td> <a href="/all/task/update" class="btn btn_sign111  ">Update</a></td>
+      </tr>
+
+    <% })  %>
+      
+    </tbody>
+  </table>
+             </div>
+        </div>
+  </div>
+ 
+
+
+ 
+ 
+ 
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

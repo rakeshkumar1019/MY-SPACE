@@ -1,0 +1,28 @@
+body{
+	padding: 0px;
+	margin: 0px;
+}
+.imgotp{
+	height: 590px;
+	width: 590px;	 
+}
+.btnRegister{
+  border: none;
+    border-radius: 1.5rem;
+    padding: 5px 50px;
+    background:black;
+    color:white;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+}
+..btnRegister:hover{
+  border: none;
+    border-radius: 1.5rem;
+    padding: 5px 50px;
+    background:black;
+    color:white;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+}
